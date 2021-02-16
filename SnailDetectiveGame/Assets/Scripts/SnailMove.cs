@@ -21,6 +21,7 @@ public class SnailMove : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        
     }
 
     private void FixedUpdate()
