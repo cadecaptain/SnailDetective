@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/snailcrime.unity
     guid: 12e6f1fb28f55499d8082e2d62b9cf8f
+  - enabled: 1
+    path: Assets/Scenes/park.unity
+    guid: 94f61b8a51dff4f1999cc2871befd661
+  - enabled: 1
+    path: Assets/Scenes/snailcrime2.unity
+    guid: 3246558b4e76d4b23b6d935c057e7a64
+  - enabled: 1
+    path: Assets/Scenes/crimealley.unity
+    guid: c80e7a8c1fc6d48499330cad48a08ea2
+  - enabled: 1
+    path: Assets/Scenes/youwin.unity
+    guid: 6392f028038ac4dbb822585e5f769ba8
   m_configObjects: {}
