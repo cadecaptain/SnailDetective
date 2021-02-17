@@ -13,6 +13,9 @@ public class EvillSnail : MonoBehaviour
 
     public float duration = 1f;
 
+    public GameObject particles;
+    private ParticleSystem ps;
+
     // Start is called before the first frame update
     void Start()
     {

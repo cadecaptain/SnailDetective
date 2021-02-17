@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject events;
     public GameObject dialogBox;
     public GameObject dialogText;
-    public GameObject endButton;
+ 
 
     private Coroutine dialogCo;
 
@@ -51,14 +51,10 @@ public class GameManager : MonoBehaviour
     public void StartButton()
     {
         startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("snailcrime"));        
+        StartCoroutine(LoadYourAsyncScene("Snail Crime"));        
     }
 
-    public void EndButton()
-    {
-        startButton.SetActive(false);
-        StartCoroutine(LoadYourAsyncScene("snailcrime"));        
-    }
+    
 
     IEnumerator ColorLerp(Color endv, float duration)
     {

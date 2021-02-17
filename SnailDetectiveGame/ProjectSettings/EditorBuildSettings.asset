@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/youwin.unity
     guid: 6392f028038ac4dbb822585e5f769ba8
+  - enabled: 1
+    path: Assets/Scenes/Snail Crime.unity
+    guid: 44b4ba2038062454b9ba3149f227ff3f
   m_configObjects: {}
