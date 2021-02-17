@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     public GameObject backgroundImage;
     public GameObject canvas;
     public GameObject events;
+    public GameObject dialogBox;
+    public GameObject dialogText;
+
+    private Coroutine dialogCo;
 
     // Start is called before the first frame update
     void Start()
@@ -72,5 +76,23 @@ public class GameManager : MonoBehaviour
         }
 
         StartCoroutine(ColorLerp(new Color(1, 1, 1, 0), 2));
+    }
+
+    public void StartDialog(string text) {
+        dialogBox.SetActive(true);
+        dialogCo = StartCoroutine(TypeText(text));
+    }
+
+    public void HideDialog() {
+        dialogBox.SetActive(false);
+        StopCoroutine(dialogCo);
+    }
+
+    IEnumerator TypeText(string text) {
+        dialogText.GetComponent<TextMeshProUGUI>().text = "";
+        foreach (char c in text.ToCharArray()) {
+            dialogText.GetComponent<TextMeshProUGUI>().text += c;
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }
