@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject events;
     public GameObject dialogBox;
     public GameObject dialogText;
+    private AudioSource source;
  
 
     private Coroutine dialogCo;
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -97,5 +98,13 @@ public class GameManager : MonoBehaviour
             dialogText.GetComponent<TextMeshProUGUI>().text += c;
             yield return new WaitForSeconds(0.1f);
         }
+    }
+
+    public void Pause() {
+        source.Pause();
+    }
+
+    public void Play() {
+        source.Play();
     }
 }

@@ -24,6 +24,7 @@ public class bosscall : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.StartDialog(myText);
+            GameManager.Instance.Pause();
             source.Play();
             Debug.Log("Played");
         }
@@ -34,6 +35,7 @@ public class bosscall : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.HideDialog();
+            GameManager.Instance.Play();
             source.Stop();
         }
     }

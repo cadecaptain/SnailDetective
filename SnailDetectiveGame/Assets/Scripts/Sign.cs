@@ -5,11 +5,12 @@ using UnityEngine;
 public class Sign : MonoBehaviour
 {
     public string myText;
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class Sign : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Player")) {
             GameManager.Instance.StartDialog(myText);
+            //source.Play();
         }
     }
 
