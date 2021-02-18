@@ -5,11 +5,12 @@ using UnityEngine;
 public class bosscall : MonoBehaviour
 {
     public string myText;
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,8 @@ public class bosscall : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.StartDialog(myText);
+            source.Play();
+            Debug.Log("Played");
         }
     }
 
@@ -31,6 +34,7 @@ public class bosscall : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.HideDialog();
+            source.Stop();
         }
     }
 }
