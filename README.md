@@ -19,6 +19,13 @@ https://opengameart.org/content/coin-0
 Jail bars:
 https://pixabay.com/illustrations/cage-bars-cell-jail-prison-1161869/
 Music:
-
-
-
+Menu background:
+https://freesound.org/people/tyops/sounds/436413/
+Main theme:
+https://freesound.org/people/tyops/sounds/401770/
+Mobile sound:
+https://freesound.org/people/albertofrog/sounds/212675/
+Police car approaching:
+https://freesound.org/people/genghis%20attenborough/sounds/69644/
+Boss music:
+https://freesound.org/people/zagi2/sounds/502964/
